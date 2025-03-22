@@ -1,5 +1,5 @@
-import Button from "./components/button";
-import Card from "./components/card"
+import Button from "../ui/button";
+import Card from "../ui/card"
 
 const Home = () => {
   return (
