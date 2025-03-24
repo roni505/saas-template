@@ -4,9 +4,24 @@ import Card from "../ui/card"
 const Home = () => {
   return (
     <>
-      <Button />    
-      <div className="flex w-full h-screen justify-center items-center bg-neutral-200">
-        <Card />
+      <div>
+        Here is the hero section...
+        The dashboard
+      </div>
+      <div>
+        Features section...
+      </div>
+      <div>
+        Testomonial secttion...
+      </div>
+      <div>
+        Pricing section...
+      </div>
+      <div>
+        CTA Section...
+      </div>
+      <div>
+        Footer section...
       </div>
     </>
   );
