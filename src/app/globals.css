@@ -1,2 +1,11 @@
 @import "tailwindcss";
 
+body {
+    @apply bg-black;
+}
+
+@theme {
+    --color-text-color: #ADB1B8;
+    --color-chip-bg: #131313;
+    --color-chip-border: #222222;
+  }

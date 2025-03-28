@@ -1,29 +1,35 @@
-import Button from "../ui/button";
-import Card from "../ui/card"
+import Hero from "@/ui/hero";
+import Nav from "@/ui/nav";
+import Features from "@/ui/features";
 
 const Home = () => {
   return (
-    <>
-      <div>
-        Here is the hero section...
-        The dashboard
-      </div>
-      <div>
-        Features section...
-      </div>
-      <div>
-        Testomonial secttion...
-      </div>
-      <div>
-        Pricing section...
-      </div>
-      <div>
-        CTA Section...
-      </div>
-      <div>
-        Footer section...
-      </div>
-    </>
+    <main className="text-white">
+      <section>
+        <Nav />
+      </section>
+      <section>
+        <Hero />
+      </section>
+      <section>
+        <Features />
+      </section>
+      <section>
+        Testimonials
+      </section>
+      <section>
+        Benefits
+      </section>
+      <section>
+        Pricing
+      </section>
+      <section>
+        CTA
+      </section>
+      <section>
+        Footer
+      </section>
+    </main>
   );
 }
 
