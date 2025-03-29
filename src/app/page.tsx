@@ -1,6 +1,8 @@
 import Hero from "@/ui/hero";
 import Nav from "@/ui/nav";
 import Features from "@/ui/features";
+import Customers from "@/ui/customers";
+import Benefits from "@/ui/benefits";
 
 const Home = () => {
   return (
@@ -15,10 +17,10 @@ const Home = () => {
         <Features />
       </section>
       <section>
-        Testimonials
+        <Customers />
       </section>
       <section>
-        Benefits
+        <Benefits />
       </section>
       <section>
         Pricing
