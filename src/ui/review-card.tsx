@@ -4,7 +4,7 @@ import Image from "next/image";
 export type ReviewCardProps = {
     review: ReactNode,
     src: string,
-    name: ReactNode,
+    name: string,
     work: ReactNode
 }
 

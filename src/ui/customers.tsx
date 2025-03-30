@@ -55,6 +55,7 @@ const Customers = () => {
                     reviewCardInputs.map((reviewCard) => {
                         return (
                             <ReviewCard
+                            key={reviewCard.name}
                             review={reviewCard.review}
                             src="/cyclesIcon.svg"
                             name={reviewCard.name}

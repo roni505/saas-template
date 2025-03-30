@@ -196,6 +196,7 @@ const Features = () => {
                                 chipInput.map((chip) => {
                                     return (
                                         <Chip 
+                                        key={chip.text}
                                         src={chip.src}
                                         text={chip.text}
                                         />

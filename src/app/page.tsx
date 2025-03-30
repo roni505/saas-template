@@ -3,6 +3,9 @@ import Nav from "@/ui/nav";
 import Features from "@/ui/features";
 import Customers from "@/ui/customers";
 import Benefits from "@/ui/benefits";
+import Pricing from "@/ui/pricing";
+import FinalCTA from "@/ui/final-cta";
+import Footer from "@/ui/footer";
 
 const Home = () => {
   return (
@@ -23,13 +26,13 @@ const Home = () => {
         <Benefits />
       </section>
       <section>
-        Pricing
+        <Pricing />
       </section>
       <section>
-        CTA
+        <FinalCTA />
       </section>
       <section>
-        Footer
+        <Footer />
       </section>
     </main>
   );

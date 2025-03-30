@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 export type ChipProp = {
     src: string
-    text: ReactNode
+    text: string
 }
 
 const Chip = ({

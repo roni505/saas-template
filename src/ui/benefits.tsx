@@ -11,7 +11,7 @@ const Benefits = () => {
             />
             <div className="flex flex-wrap items-center justify-center px-20 md:p-0 w-full max-w-6xl">
                 {/* First card */}
-                <div className="relative flex flex-col justify-center items-center px-28 py-9 w-full max-w-96">
+                <div className="relative -z-10 flex flex-col justify-center items-center px-28 py-9 w-full max-w-96">
                 <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#434343] to-transparent"></div>
                 <div className="absolute top-0 right-0 h-full w-[1px] bg-gradient-to-b from-transparent via-[#434343] to-transparent"></div>
                     <Image
@@ -26,7 +26,7 @@ const Benefits = () => {
                     <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#434343] to-transparent"></div>
                 </div>
                 {/* Second card */}
-                <div className="relative flex flex-col justify-center items-center px-28 py-9 w-full max-w-96">
+                <div className="relative -z-10 flex flex-col justify-center items-center px-28 py-9 w-full max-w-96">
                 <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#434343] to-transparent"></div>
                 <div className="absolute top-0 right-0 h-full w-[1px] bg-gradient-to-b from-transparent via-[#434343] to-transparent"></div>
                     <Image
@@ -41,7 +41,7 @@ const Benefits = () => {
                     <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#434343] to-transparent"></div>
                 </div>
                 {/* Third card */}
-                <div className="relative flex flex-col justify-center items-center px-28 py-9 w-full max-w-96">
+                <div className="relative -z-10 flex flex-col justify-center items-center px-28 py-9 w-full max-w-96">
                 <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#434343] to-transparent"></div>
                 <div className="absolute top-0 right-0 h-full w-[1px] bg-gradient-to-b from-transparent via-[#434343] to-transparent"></div>
                     <Image
