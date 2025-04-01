@@ -285,14 +285,192 @@ const Features = () => {
                         Organize tasks.</p>
                     </div>
                 </div>
-                {/* This is the 3rd  */}
-                <div className="w-full lg:max-w-[832px] h-[514px] border border-neutral-900 rounded-2xl">
-                    
+                {/* This is the 3rd div */}
+                <div className="w-full lg:max-w-[832px] h-[514px] border border-neutral-900 rounded-2xl p-5 text-xs">
+                    <div className="flex bg-[#0C0C0D] p-6 rounded-2xl text-text-color gap-8 flex-col justify-start w-full">
+                        <div className="flex bg-[#141415] px-5 py-6 rounded-xl w-full justify-between">
+                            <div className="flex gap-2">
+                                <Image 
+                                src="/projectTimelineIcon.svg"
+                                width={18}
+                                height={18}
+                                alt="Icon of Project Timeline"
+                                />
+                                <span className="text-xs">Project Timeline</span>
+                            </div>
+                            <div className="flex gap-4 items-center justify-center">
+                              <Image 
+                                src="/taskTrackingIcon1.svg"
+                                width={18}
+                                height={18}
+                                alt="Icon of Project Timeline"
+                                />
+                                <Image 
+                                src="/taskTrackingIcon2.svg"
+                                width={20}
+                                height={20}
+                                alt="Icon of Project Timeline"
+                                />
+                            </div>
+                        </div>
+                        <div className="flex gap-3 w-full">
+                            {/* First col */}
+                            <div className="flex flex-col w-full">
+                                <span className="mb-8">
+                                    Not started
+                                </span>
+                                <div className="bg-[#111112] shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-4 rounded-2xl flex flex-col gap-5 mb-5">
+                                    <div className="flex flex-col">
+                                        <span className="text-white">Create client proposal</span>
+                                        <span className="mt-1">Due by March 03, 2024</span>
+                                    </div>
+                                    <span className="w-full h-px bg-[#1E1E1E] flex"></span>
+                                    <div className="flex justify-between">
+                                        <div className="flex gap-2">
+                                            <Image 
+                                            src="/taskTrackingIcon1.svg"
+                                            width={20}
+                                            height={20}
+                                            alt="Image"
+                                            />
+                                            <Image 
+                                            src="/taskTrackingIcon1.svg"
+                                            width={20}
+                                            height={20}
+                                            alt="Image"
+                                            />
+                                        </div>
+                                        <div className="flex">
+                                            <Image 
+                                            src="/taskTrackingIcon1.svg"
+                                            width={20}
+                                            height={20}
+                                            alt="Image"
+                                            />
+                                            <Image 
+                                            src="/taskTrackingIcon1.svg"
+                                            width={20}
+                                            height={20}
+                                            alt="Image"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="flex flex-col gap-1 bg-[#111112] shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-4 rounded-2xl">
+                                    <span className="text-white">Create client proposal</span>
+                                    <span>Due by March 03, 2024</span>
+                                </div>
+                            </div>
+                            {/* Second col */}
+                            <div className="flex flex-col w-full">
+                                <span className="mb-8">
+                                    Not started
+                                </span>
+                                <div className="bg-[#111112] shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-4 rounded-2xl flex flex-col gap-5 mb-5">
+                                    <div className="flex flex-col">
+                                        <span className="text-white">Create client proposal</span>
+                                        <span className="mt-1">Due by March 03, 2024</span>
+                                    </div>
+                                    <span className="w-full h-px bg-[#1E1E1E] flex"></span>
+                                    <div className="flex justify-between">
+                                        <div className="flex gap-2">
+                                            <Image 
+                                            src="/taskTrackingIcon1.svg"
+                                            width={20}
+                                            height={20}
+                                            alt="Image"
+                                            />
+                                            <Image 
+                                            src="/taskTrackingIcon1.svg"
+                                            width={20}
+                                            height={20}
+                                            alt="Image"
+                                            />
+                                        </div>
+                                        <div className="flex">
+                                            <Image 
+                                            src="/taskTrackingIcon1.svg"
+                                            width={20}
+                                            height={20}
+                                            alt="Image"
+                                            />
+                                            <Image 
+                                            src="/taskTrackingIcon1.svg"
+                                            width={20}
+                                            height={20}
+                                            alt="Image"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="flex flex-col gap-1 bg-[#111112] shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-4 rounded-2xl">
+                                    <span className="text-white">Create client proposal</span>
+                                    <span>Due by March 03, 2024</span>
+                                </div>
+                            </div>
+                            {/* Third col */}
+                            <div className="flex flex-col w-full max-sm:hidden">
+                                <span className="mb-8">
+                                    Not started
+                                </span>
+                                <div className="bg-[#111112] shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-4 rounded-2xl flex flex-col gap-5 mb-5">
+                                    <div className="flex flex-col">
+                                        <span className="text-white">Create client proposal</span>
+                                        <span className="mt-1">Due by March 03, 2024</span>
+                                    </div>
+                                    <span className="w-full h-px bg-[#1E1E1E] flex"></span>
+                                    <div className="flex justify-between">
+                                        <div className="flex gap-2">
+                                            <Image 
+                                            src="/taskTrackingIcon1.svg"
+                                            width={20}
+                                            height={20}
+                                            alt="Image"
+                                            />
+                                            <Image 
+                                            src="/taskTrackingIcon1.svg"
+                                            width={20}
+                                            height={20}
+                                            alt="Image"
+                                            />
+                                        </div>
+                                        <div className="flex">
+                                            <Image 
+                                            src="/taskTrackingIcon1.svg"
+                                            width={20}
+                                            height={20}
+                                            alt="Image"
+                                            />
+                                            <Image 
+                                            src="/taskTrackingIcon1.svg"
+                                            width={20}
+                                            height={20}
+                                            alt="Image"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="flex flex-col gap-1 bg-[#111112] shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-4 rounded-2xl">
+                                    <span className="text-white">Create client proposal</span>
+                                    <span>Due by March 03, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="text-sm flex justify-start flex-col gap-2 mt-5">
+                        <h4>Powerful Task Management Tools</h4>
+                        <p className="text-neutral-500">Powerful Task MaEasily sort tasks by priority and status.
+                        Organize tasks.</p>
+                    </div>
                 </div>
                 {/* This is the 4th div */}
-                <div className="w-full lg:max-w-[364px] h-[514px] border border-neutral-900 rounded-2xl">
-                    <div className="flex bg-[#0C0C0D] p-6 rounded-2xl text-text-color gap-8 flex-col w-full h-full justify-center">
+                <div className="w-full lg:max-w-[364px] h-[514px] border border-neutral-900 p-5 rounded-2xl">
+                    <div className="flex bg-[#0C0C0D] p-6 rounded-2xl text-text-color gap-8 flex-col h-[24rem] justify-center">
                         <Button varient="primary">Ask Stratify AI</Button>
+                    </div>
+                    <div className="text-sm flex justify-start flex-col gap-2 mt-5">
+                        <h4>Powerful Task Management Tools</h4>
+                        <p className="text-neutral-500">Powerful Task MaEasily sort tasks by priority</p>
                     </div>
                 </div>
             </div>

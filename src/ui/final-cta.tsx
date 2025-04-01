@@ -22,8 +22,8 @@ const FinalCTA = () => {
                     Try Stratify for Free
                 </Button>
             </div>
-            <span className=" h-[1px] bg-gradient-to-r from-transparent via-[#00FFA5] to-transparent mx-auto w-full"></span>
-            <span className="opacity-100 transition-opacity duration-300 inset-x-0 bottom-px bg-gradient-to-r from-transparent via-[#00FFA5] to-transparent h-[8px] w-2/3 mx-auto blur-sm "></span>
+            <span className=" h-[1px] bg-gradient-to-r from-transparent via-[#363636] to-transparent mx-auto w-full"></span>
+            {/* <span className="opacity-100 transition-opacity duration-300 inset-x-0 bottom-px bg-gradient-to-r from-transparent via-[#00FFA5] to-transparent h-[8px] w-2/3 mx-auto blur-sm "></span> */}
         </section>
     )
 }
