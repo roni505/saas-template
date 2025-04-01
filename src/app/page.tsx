@@ -20,10 +20,10 @@ const Home = () => {
         <Features />
       </section>
       <section>
-        <Customers />
+        {/* <Customers /> */}
       </section>
       <section>
-        <Benefits />
+        {/* <Benefits /> */}
       </section>
       <section>
         <Pricing />

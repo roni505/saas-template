@@ -2,6 +2,7 @@ import SectionHeader from "./section-header";
 import Image from "next/image";
 import Chip from "./chip";
 import { ChipProp } from "./chip";
+import Button from "./button";
 
 const chipInput: ChipProp[] = [
     {
@@ -44,13 +45,14 @@ const chipInput: ChipProp[] = [
 
 const Features = () => {
     return (
-        <div className="flex flex-col justify-center items-center max-w-7xl mx-auto">
+        <div className="flex flex-col justify-center items-center max-w-7xl mx-auto w-full">
             <SectionHeader 
             chip="Features"
             title="Advanced Features for Peak Efficienty"
             description="Explore the features that elevate your business workflow."
             />
             <div className="w-full px-5 lg:px-0 flex flex-wrap items-center justify-center gap-7">
+                {/* This is the 1st div */}
                 <div className="w-full lg:max-w-[600px] border border-neutral-900 rounded-2xl p-5">
                     <div className="flex bg-[#0C0C0D] p-6 rounded-2xl text-text-color gap-3 flex-wrap justify-center">
                         {/* 1st card */}
@@ -211,14 +213,87 @@ const Features = () => {
                         Organize tasks.</p>
                     </div>
                 </div>
-                <div className="w-full lg:max-w-[600px] h-[573px] border border-neutral-900 rounded-2xl">
-                    First Div
+                {/* This is the 2nd div */}
+                <div className="w-full lg:max-w-[600px] border border-neutral-900 rounded-2xl p-5 text-xs" >
+                    <div className="flex bg-[#0C0C0D] p-6 rounded-2xl text-text-color gap-8 flex-col justify-start w-full">
+                        <div className="flex gap-2 bg-[#141415] px-5 py-6 rounded-xl w-full">
+                            <Image 
+                            src="/projectTimelineIcon.svg"
+                            width={18}
+                            height={18}
+                            alt="Icon of Project Timeline"
+                            />
+                            <span className="text-xs">Project Timeline</span>
+                        </div>
+                        <div className="flex w-full text-xs justify-between px-3">
+                            <span>JAN</span>
+                            <span>FEB</span>
+                            <span>MAR</span>
+                            <span>APR</span>
+                            <span>MAY</span>
+                            <span>JUN</span>
+                            <span>AUG</span>
+                        </div>
+                        <div className="flex flex-col gap-5 w-full">
+                            {/* first row */}
+                            <div className="flex gap-3">
+                                <div className="bg-[#111112] flex shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-3 rounded-xl w-[21rem] sm:w-[35rem] lg:w-[31rem]">
+                                    <div className="flex">
+                                        <span className="mr-3 h-full w-[2px] bg-gradient-to-t from-[rgb(44,144,24)] to-[rgb(4,48,18)] mx-auto"></span>
+                                    </div>
+                                    <div className="flex flex-col">
+                                        <span className="mb-1">Planning & Analysis</span>
+                                        <span>Jan 02 to Apr 04</span>
+                                    </div>
+                                </div>
+                                <div className="bg-[#111112] w-full shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-3 rounded-xl"></div>
+                            </div>
+                            {/* 2nd row */}
+                            <div className="flex gap-3">
+                                <div className="bg-[#111112] flex flex-col shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-3 rounded-xl w-[21rem] sm:w-[35rem] lg:w-[31rem]">
+                                </div>
+                                <div className="bg-[#111112] w-full shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-3 rounded-xl flex">
+                                    <div className="flex">
+                                        <span className="mr-3 h-full w-[2px] bg-gradient-to-t from-[rgb(148,130,0)] to-[rgb(47,47,3)] mx-auto"></span>
+                                    </div>
+                                    <div className="flex flex-col">
+                                        <span className="mb-1">Design & Prototyping</span>
+                                        <span>May 02 to Jun 30</span>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* 3rd row */}
+                            <div className="flex gap-3">
+                                <div className="bg-[#111112] flex shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-3 rounded-xl w-2xl sm:w-[69rem] lg:w-5xl">
+                                    <div className="flex">
+                                        <span className="mr-3 h-full w-[2px] bg-gradient-to-t from-[rgb(122,0,252)] to-[rgb(46,2,79)] mx-auto"></span>
+                                    </div>
+                                    <div className="flex flex-col">
+                                        <span className="mb-1">Development Jan 02 to May 28</span>
+                                        <span>Jan 02 to May 28</span>
+                                    </div>
+                                    </div>
+                                <div className="bg-[#111112] w-full shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-3 rounded-xl flex flex-col">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="text-sm flex justify-start flex-col gap-2 mt-5">
+                        <h4>Powerful Task Management Tools</h4>
+                        <p className="text-neutral-500">Powerful Task MaEasily sort tasks by priority and status.
+                        Organize tasks.</p>
+                    </div>
                 </div>
+                {/* This is the 3rd  */}
                 <div className="w-full lg:max-w-[832px] h-[514px] border border-neutral-900 rounded-2xl">
-                    Third Div
+                    
                 </div>
+                {/* This is the 4th div */}
                 <div className="w-full lg:max-w-[364px] h-[514px] border border-neutral-900 rounded-2xl">
-                    Fourth Div
+                    <div className="flex bg-[#0C0C0D] p-6 rounded-2xl text-text-color gap-8 flex-col w-full h-full justify-center">
+                        <Button varient="primary">Ask Stratify AI</Button>
+                    </div>
                 </div>
             </div>
         </div>
