@@ -1,8 +1,12 @@
+'use client'
+
 import SectionHeader from "./section-header";
 import Image from "next/image";
 import Chip from "./chip";
 import { ChipProp } from "./chip";
 import Button from "./button";
+import { motion } from "motion/react";
+import { useRef } from "react";
 
 const chipInput: ChipProp[] = [
     {
@@ -44,6 +48,7 @@ const chipInput: ChipProp[] = [
 ]
 
 const Features = () => {
+    const constraintsRef = useRef(null)
     return (
         <div className="flex flex-col justify-center items-center max-w-7xl mx-auto w-full">
             <SectionHeader 
@@ -56,7 +61,19 @@ const Features = () => {
                 <div className="w-full lg:max-w-[600px] border border-neutral-900 rounded-2xl p-5">
                     <div className="flex bg-[#0C0C0D] p-6 rounded-2xl text-text-color gap-3 flex-wrap justify-center">
                         {/* 1st card */}
-                        <div className="flex flex-col bg-[#111112] rounded-2xl p-3 w-full shadow-[0px_-1px_0px_0px_rgba(35,37,40)] md:max-w-[248px]">
+                        <motion.div                      
+                        whileHover={{
+                            scale: 1.1,
+                            rotate: 4
+                        }}
+                        style={{
+                            translateZ: 100,
+                        }}
+                        transition={{
+                            duration: 0.3,
+                            ease: "easeInOut"
+                        }}
+                        className="group hover:border border-[rgb(0,157,102)] -cursor-pointer flex flex-col bg-[#111112] rounded-2xl p-3 w-full shadow-[0px_-1px_0px_0px_rgba(35,37,40)] md:max-w-[248px]">
                             <div className="flex gap-3 ">
                                 <span className="text-sm">Favorites</span>
                                 <Image
@@ -73,7 +90,7 @@ const Features = () => {
                                 height={12}
                                 alt="Build in public alt"
                                 />
-                                <span className="text-xs">Build in Public</span>
+                                <span className="text-xs duration-300 ease-in-out">Build in Public</span>
                             </div>
                             <div className="flex gap-3 mt-3">
                                 <Image
@@ -84,9 +101,18 @@ const Features = () => {
                                 />
                                 <span className="text-xs">Youtube</span>
                             </div>
-                        </div>
+                        </motion.div>
                         {/* 2nd card */}
-                        <div className="flex flex-col bg-[#111112] rounded-2xl p-3 w-full shadow-[0px_-1px_0px_0px_rgba(35,37,40)] md:max-w-[248px]">
+                        <motion.div 
+                        whileHover={{
+                            rotate: 4,
+                            scale: 1.1
+                        }}
+                        transition={{
+                            duration: 0.3,
+                            ease: "easeInOut"
+                        }}
+                        className="hover:border border-[rgb(0,157,102)] flex flex-col bg-[#111112] rounded-2xl p-3 w-full shadow-[0px_-1px_0px_0px_rgba(35,37,40)] md:max-w-[248px]">
                             <div className="flex gap-3 ">
                                 <span className="text-sm">Your teams</span>
                                 <Image
@@ -114,9 +140,14 @@ const Features = () => {
                                 />
                                 <span className="text-xs">Templates</span>
                             </div>
-                        </div>
+                        </motion.div>
                         {/* 3rd card */}
-                        <div className="flex flex-col bg-[#111112] rounded-2xl p-3 w-full shadow-[0px_-1px_0px_0px_rgba(35,37,40)] md:max-w-[248px]">
+                        <motion.div 
+                        whileHover={{
+                            boxShadow: "0px 0px 8px rgb(0,157,102)"
+                            
+                        }}
+                        className="flex flex-col bg-[#111112] rounded-2xl p-3 w-full shadow-[0px_-1px_0px_0px_rgba(35,37,40)] md:max-w-[248px]">
                             <div className="flex gap-3 ">
                                 <span className="text-sm">Try</span>
                                 <Image
@@ -153,7 +184,7 @@ const Features = () => {
                                 />
                                 <span className="text-xs">Link Github</span>
                             </div>
-                        </div>
+                        </motion.div>
                         {/* 4th card */}
                         <div className="flex flex-col bg-[#111112] rounded-2xl p-3 w-full shadow-[0px_-1px_0px_0px_rgba(35,37,40)] md:max-w-[248px]">
                             <div className="flex gap-3 ">
@@ -215,7 +246,7 @@ const Features = () => {
                 </div>
                 {/* This is the 2nd div */}
                 <div className="w-full lg:max-w-[600px] border border-neutral-900 rounded-2xl p-5 text-xs" >
-                    <div className="flex bg-[#0C0C0D] p-6 rounded-2xl text-text-color gap-8 flex-col justify-start w-full">
+                    <motion.div ref={constraintsRef} className="flex bg-[#0C0C0D] p-6 rounded-2xl text-text-color gap-8 flex-col justify-start w-full">
                         <div className="flex gap-2 bg-[#141415] px-5 py-6 rounded-xl w-full">
                             <Image 
                             src="/projectTimelineIcon.svg"
@@ -236,8 +267,17 @@ const Features = () => {
                         </div>
                         <div className="flex flex-col gap-5 w-full">
                             {/* first row */}
-                            <div className="flex gap-3">
-                                <div className="bg-[#111112] flex shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-3 rounded-xl w-[21rem] sm:w-[35rem] lg:w-[31rem]">
+                            <div
+                            className="flex gap-3">
+                                <motion.div 
+                                drag="x" 
+                                dragConstraints={{ top: 0, right: 0, bottom: 100, left: 0 }} 
+                                dragElastic={ 0.3 } 
+                                dragTransition={{
+                                    bounceStiffness: 500,
+                                    bounceDamping: 15
+                                }}
+                                className="bg-[#111112] flex shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-3 rounded-xl w-[21rem] sm:w-[35rem] lg:w-[31rem]">
                                     <div className="flex">
                                         <span className="mr-3 h-full w-[2px] bg-gradient-to-t from-[rgb(44,144,24)] to-[rgb(4,48,18)] mx-auto"></span>
                                     </div>
@@ -245,14 +285,22 @@ const Features = () => {
                                         <span className="mb-1">Planning & Analysis</span>
                                         <span>Jan 02 to Apr 04</span>
                                     </div>
-                                </div>
+                                </motion.div>
                                 <div className="bg-[#111112] w-full shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-3 rounded-xl"></div>
                             </div>
                             {/* 2nd row */}
                             <div className="flex gap-3">
                                 <div className="bg-[#111112] flex flex-col shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-3 rounded-xl w-[21rem] sm:w-[35rem] lg:w-[31rem]">
                                 </div>
-                                <div className="bg-[#111112] w-full shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-3 rounded-xl flex">
+                                <motion.div 
+                                drag="x" 
+                                dragConstraints={{ top: 0, right: 0, bottom: 100, left: 0 }} 
+                                dragElastic={ 0.3 } 
+                                dragTransition={{
+                                    bounceStiffness: 500,
+                                    bounceDamping: 15
+                                }}
+                                className="bg-[#111112] w-full shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-3 rounded-xl flex">
                                     <div className="flex">
                                         <span className="mr-3 h-full w-[2px] bg-gradient-to-t from-[rgb(148,130,0)] to-[rgb(47,47,3)] mx-auto"></span>
                                     </div>
@@ -260,25 +308,33 @@ const Features = () => {
                                         <span className="mb-1">Design & Prototyping</span>
                                         <span>May 02 to Jun 30</span>
                                     </div>
-                                </div>
+                                </motion.div>
                             </div>
                             {/* 3rd row */}
                             <div className="flex gap-3">
-                                <div className="bg-[#111112] flex shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-3 rounded-xl w-2xl sm:w-[69rem] lg:w-5xl">
+                                <motion.div
+                                drag="x" 
+                                dragConstraints={{ top: 0, right: 0, bottom: 100, left: 0 }} 
+                                dragElastic={ 0.3 } 
+                                dragTransition={{
+                                    bounceStiffness: 500,
+                                    bounceDamping: 15
+                                }} 
+                                className="group bg-[#111112] flex shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-3 rounded-xl w-2xl sm:w-[69rem] lg:w-5xl">
                                     <div className="flex">
-                                        <span className="mr-3 h-full w-[2px] bg-gradient-to-t from-[rgb(122,0,252)] to-[rgb(46,2,79)] mx-auto"></span>
+                                        <span className="mr-3 h-full w-[2px] bg-gradient-to-t from-[rgb(122,0,252)] to-[rgb(46,2,79)] mx-auto group-hover:shadow-[0px_0px_10px_rgb(180,50,220)] transition duration-300 ease-in-out"></span>
                                     </div>
                                     <div className="flex flex-col">
                                         <span className="mb-1">Development Jan 02 to May 28</span>
                                         <span>Jan 02 to May 28</span>
                                     </div>
-                                    </div>
+                                </motion.div>
                                 <div className="bg-[#111112] w-full shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-3 rounded-xl flex flex-col">
                                     
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                     <div className="text-sm flex justify-start flex-col gap-2 mt-5">
                         <h4>Powerful Task Management Tools</h4>
                         <p className="text-neutral-500">Powerful Task MaEasily sort tasks by priority and status.
