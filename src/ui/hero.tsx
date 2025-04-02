@@ -1,6 +1,5 @@
 'use client'
 
-import Balancer from "react-wrap-balancer";
 import Button from "./button";
 import Image from "next/image";
 import favicon from "../app/favicon.ico";

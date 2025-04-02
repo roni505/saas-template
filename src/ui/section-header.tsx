@@ -1,7 +1,7 @@
 'use client'
 
 import { motion, useInView } from "motion/react";
-import { ReactNode, useRef } from "react";
+import { useRef } from "react";
 
 export type SectionProps = {
     chip: string,

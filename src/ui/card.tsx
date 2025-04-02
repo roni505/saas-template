@@ -1,7 +1,7 @@
 'use client'
 
 import { cn } from "@/lib/utils";
-import { IconAccessibleFilled, IconCross, IconHours24, IconPlus, IconX } from "@tabler/icons-react";
+import { IconAccessibleFilled, IconHours24, IconPlus, IconX } from "@tabler/icons-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
 
