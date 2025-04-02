@@ -10,7 +10,7 @@ const Hero = () => {
     return (
         <section
         className="w-full">
-            <div className="max-w-5xl flex flex-col justify-center items-center mx-auto mt-52">
+            <div className="max-w-5xl flex flex-col justify-center items-center mx-auto mt-52 md:px-5">
                 <motion.div 
                 initial={{
                     opacity: 0

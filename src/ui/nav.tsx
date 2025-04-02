@@ -10,7 +10,7 @@ const Nav = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <header className="relative w-full">
+        <header className="relative w-full z-20">
             <nav className="fixed right-0 left-0 top-0 py-4 px-5 lg:px-0 flex max-w-7xl justify-between mx-auto items-cente bg-black/30 backdrop-blur-lg">
                 <Logo />
                 <div 

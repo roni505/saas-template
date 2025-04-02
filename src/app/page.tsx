@@ -10,22 +10,22 @@ import Footer from "@/ui/footer";
 const Home = () => {
   return (
     <main className="text-white">
-      <section>
+      <section >
         <Nav />
       </section>
       <section>
         <Hero />
       </section>
-      <section>
+      <section className="mt-52">
         <Features />
       </section>
-      <section>
+      <section className="mt-52">
         <Customers />
       </section>
-      <section>
+      <section className="mt-52">
         <Benefits />
       </section>
-      <section>
+      <section className="mt-52">
         <Pricing />
       </section>
       <section>
