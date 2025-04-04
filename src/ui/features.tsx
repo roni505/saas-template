@@ -435,14 +435,12 @@ const Features = () => {
                                     y: -50,
                                     rotate: -10,
                                     transition: {
-                                        type: "spring",
-                                        bounce: 0.4,
-                                        duration: 0.8,
-                                        
+                                        duration: 0.3,                                        
                                     }
                                 }}
                                 whileInView={{
-                                    y: [0,32,-32,0]
+                                    y: [0,32,-32,0],
+                                    transition: { duration: 1 }
                                 }}
                                 className="hover:border bg-[#111112] shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-4 rounded-2xl flex flex-col gap-5 border-[rgb(0,157,102)] w-full">
                                     <div className="flex flex-col">
@@ -544,14 +542,14 @@ const Features = () => {
                 </div>
                 {/* This is the 4th div */}
                 <div className="w-full lg:max-w-[364px] h-[514px] border border-neutral-900 p-5 rounded-2xl">
-                    <div className="relative group flex bg-[#0C0C0D] p-6 rounded-2xl text-text-color gap-8 flex-col h-[24rem] justify-center">
-                        <Button 
-                        className="relative"
+                    <div className="relative hover:bg-gradient-to-t from-[#001307] to-transparent group flex bg-[#0C0C0D] p-6 rounded-2xl text-text-color gap-8 flex-col h-[24rem] justify-center">
+                        <Button
+                        className="relative text-white"
                         varient="primary">
                             Ask Stratify AI
                         </Button>
-                        <span className="absolute opacity-0 group-hover:opacity-100 inset-x-0 top-px bg-gradient-to-r from-transparent via-green-800 to-transparent h-px w-3/4 mx-auto"></span>
-                        <span className="absolute opacity-0 group-hover:opacity-20 transition-opacity duration-300 inset-x-0 top-px bg-gradient-to-b from-[rgb(0,157,107)]  to-transparent h-full w-full mx-auto blur-sm "></span>
+                        <span className="absolute opacity-0 group-hover:opacity-100 inset-x-0 bottom-px bg-gradient-to-r from-transparent via-green-800 to-transparent duration-400 h-[1.5px] w-3/4 mx-auto"></span>
+                        {/* <span className="absolute opacity-0 group-hover:opacity-20 transition-opacity duration-300 inset-x-0 top-px bg-gradient-to-b from-[rgb(0,157,107)]  to-transparent h-full w-full mx-auto blur-sm "></span> */}
                     </div>
                     <div className="text-sm flex justify-start flex-col gap-2 mt-5">
                         <h4>Powerful Task Management Tools</h4>

@@ -5,37 +5,37 @@ import { ReviewCardProps } from "./review-card";
 const reviewCardInputs: ReviewCardProps[] = [
     {
         review: "“Stratify transformed our brand with their innovative designs and strategic vision. Their creativity and attention to detail set them apart”",
-        src: "",
+        src: "/image1.svg",
         name: " James Rutherford",
         work: "CEO of Coffee Breaks & Procrastination"
     },
     {
         review: "“I was skeptical at first, but now I pretend I knew it would be amazing all along. It’s rare to find something that actually delivers”",
-        src: "",
+        src: "/image2.svg",
         name: "Sophia Mitchell",
         work: "Chief Overthinker at Decisions Inc."
     },
     {
         review: "This changed my life! Not dramatically, but just enough to brag about it at dinner parties.",
-        src: "",
+        src: "/image3.svg",
         name: "Daniel Carter",
         work: "Vice President of Last-Minute Fixes"
     },
     {
         review: "Absolutely blown away! Everything worked so smoothly that I started questioning my past choices. If only everything else was this easy!",
-        src: "",
+        src: "/image4.svg",
         name: "Emily Ross",
         work: "Director of Unnecessary Meetings"
     },
     {
         review: "I’d leave a longer review, but I’m too busy enjoying the results. Everything was seamless, and I feel great about my decision!",
-        src: "",
+        src: "/image5.svg",
         name: "Michael Bennett",
         work: "Head of ‘I Told You So’ Department"
     },
     {
         review: "I give it five stars, mostly because six isn’t an option. The experience was effortless, and I couldn’t be happier!",
-        src: "",
+        src: "/image6.svg",
         name: "Olivia Parker",
         work: "Senior Specialist in Pretending to Work"
     },
@@ -57,7 +57,7 @@ const Customers = () => {
                             <ReviewCard
                             key={reviewCard.name}
                             review={reviewCard.review}
-                            src="/cyclesIcon.svg"
+                            src={reviewCard.src}
                             name={reviewCard.name}
                             work={reviewCard.work}
                             />

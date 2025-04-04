@@ -12,7 +12,7 @@ const SectionHeader = ({
     return (
         <div className="px-5 sm:max-w-[550px] flex flex-col items-center justify-center">
             <span 
-                className="px-4 py-1 w-24 bg-chip-bg text-text-color text-sm rounded-4xl text-center border border-chip-border mb-5"
+                className="flex justify-center items-center px-4 py-1 w-24 bg-chip-bg text-text-color text-sm rounded-4xl text-center border border-chip-border mb-5"
             >
                 {chip}
             </span>

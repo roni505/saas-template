@@ -15,7 +15,7 @@ const Benefits = () => {
                 <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#434343] to-transparent"></div>
                 <div className="absolute top-0 right-0 h-full w-[1px] bg-gradient-to-b from-transparent via-[#434343] to-transparent"></div>
                     <Image
-                    src="/24/7supportIcon.svg"
+                    src="supportIcon.svg"
                     width={50}
                     height={50}
                     alt=""
@@ -30,13 +30,13 @@ const Benefits = () => {
                 <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#434343] to-transparent"></div>
                 <div className="absolute top-0 right-0 h-full w-[1px] bg-gradient-to-b from-transparent via-[#434343] to-transparent"></div>
                     <Image
-                    src="/24/7supportIcon.svg"
+                    src="/boostIcon.svg"
                     width={50}
                     height={50}
                     alt=""
                     />
-                    <span className="text-center text-base font-semibold mt-5">24/7 AI Support</span>
-                    <span className="text-center text-sm  text-[#BEBEBE] mt-4 w-[150px]">Stratify’s AI is available 24/7, always ready to assist you.</span>
+                    <span className="text-center text-base font-semibold mt-5">Boost Productivity</span>
+                    <span className="text-center text-sm  text-[#BEBEBE] mt-4 w-[150px]">Streamline routine tasks to boost efficiency, save team's valuable time.</span>
                     <div className="absolute top-0 left-0 h-full w-[1px] bg-gradient-to-b from-transparent via-[#434343] to-transparent"></div>
                     <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#434343] to-transparent"></div>
                 </div>
@@ -45,7 +45,7 @@ const Benefits = () => {
                 <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#434343] to-transparent"></div>
                 <div className="absolute top-0 right-0 h-full w-[1px] bg-gradient-to-b from-transparent via-[#434343] to-transparent"></div>
                     <Image
-                    src="/24/7supportIcon.svg"
+                    src="uxIcon.svg"
                     width={50}
                     height={50}
                     alt=""
