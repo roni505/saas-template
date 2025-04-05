@@ -9,7 +9,7 @@ import AnimatedText from "./animated-text";
 const Hero = () => {
     return (
         <section
-        className="w-full">
+        className="w-full flex flex-col items-center justify-center">
             <div className="max-w-5xl flex flex-col justify-center items-center mx-auto mt-52 md:px-5">
                 <motion.div 
                 initial={{
@@ -46,15 +46,15 @@ const Hero = () => {
                 >
                     Try Stratify for Free
                 </Button>
-                <div>
+            </div>
+            <div className="mt-16 border border-neutral-900 p-6 rounded-2xl">
                     <Image
-                    src={favicon}
-                    width={1024}
+                    src="/ok.svg"
+                    width={1080}
                     height={800}
                     alt="Dashboard"
                     />
                 </div>
-            </div>
         </section>
     )
 }

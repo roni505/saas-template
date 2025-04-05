@@ -56,14 +56,14 @@ const Features = () => {
             title="Advanced Features for Peak Efficienty"
             description="Explore the features that elevate your business workflow."
             />
-            <div className="w-full px-5 lg:px-0 flex flex-wrap items-center justify-center gap-7">
+            <div className="w-full px-5 lg:px-0 flex flex-wrap xl:flex-wrap items-center justify-center gap-7">
                 {/* This is the 1st div */}
                 <div className="w-full lg:max-w-[600px] border border-neutral-900 rounded-2xl p-5">
                     <div className="flex bg-[#0C0C0D] p-6 rounded-2xl text-text-color gap-3 flex-wrap justify-center">
                         {/* 1st card */}
                         <motion.div                      
                         whileHover={{
-                            rotate: 10
+                            rotate: -10
                         }}
                         style={{
                             translateZ: 100,
@@ -108,8 +108,9 @@ const Features = () => {
                             rotate: 10,
                         }}
                         transition={{
-                            duration: 0.3,
-                            ease: "easeInOut"
+                            type: "spring",
+                            bounce: 0.6,
+                            duration: 0.8
                         }}
                         className="hover:border border-[rgb(0,157,102)] flex flex-col bg-[#111112] rounded-2xl p-3 w-full shadow-[0px_-1px_0px_0px_rgba(35,37,40)] md:max-w-[248px]">
                             <div className="flex gap-3 ">
@@ -235,8 +236,7 @@ const Features = () => {
                     </div>
                     <div className="text-sm flex justify-start flex-col gap-2 mt-5">
                         <h4>Powerful Task Management Tools</h4>
-                        <p className="text-neutral-500">Powerful Task MaEasily sort tasks by priority and status.
-                        Organize tasks.</p>
+                        <p className="text-neutral-500">From daily to-dos to complex workflows — manage everything in one powerful platform.</p>
                     </div>
                 </div>
                 {/* This is the 2nd div */}
@@ -275,9 +275,9 @@ const Features = () => {
                                 whileInView={{
                                     x: [0,32,-32,0],
                                 }}
-                                className="bg-[#111112] cursor-pointer flex shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-3 rounded-xl w-[21rem] sm:w-[35rem] lg:w-[31rem]">
+                                className="group bg-[#111112] cursor-pointer flex shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-3 rounded-xl w-[21rem] sm:w-[35rem] lg:w-[31rem]">
                                     <div className="flex">
-                                        <span className="mr-3 h-full w-[2px] bg-gradient-to-t from-[rgb(44,144,24)] to-[rgb(4,48,18)] mx-auto"></span>
+                                        <span className="mr-3 h-full w-[2px] bg-gradient-to-t from-[rgb(44,144,24)] to-[rgb(4,48,18)] group-hover:shadow-[0px_0px_10px_rgba(50,255,50,0.8)] mx-auto"></span>
                                     </div>
                                     <div className="flex flex-col">
                                         <span className="mb-1">Planning & Analysis</span>
@@ -288,7 +288,7 @@ const Features = () => {
                             </div>
                             {/* 2nd row */}
                             <div className="flex gap-3">
-                                <div className="bg-[#111112] flex flex-col shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-3 rounded-xl w-[21rem] sm:w-[35rem] lg:w-[31rem]">
+                                <div className="group bg-[#111112] flex flex-col shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-3 rounded-xl w-[21rem] sm:w-[35rem] lg:w-[31rem]">
                                 </div>
                                 <motion.div 
                                 drag="x" 
@@ -301,9 +301,9 @@ const Features = () => {
                                 whileInView={{
                                     x: [0,-32,32,0],
                                 }}
-                                className="bg-[#111112] cursor-pointer w-full shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-3 rounded-xl flex">
+                                className="group bg-[#111112] cursor-pointer w-full shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-3 rounded-xl flex">
                                     <div className="flex">
-                                        <span className="mr-3 h-full w-[2px] bg-gradient-to-t from-[rgb(148,130,0)] to-[rgb(47,47,3)] mx-auto"></span>
+                                        <span className="mr-3 h-full w-[2px] bg-gradient-to-t from-[rgb(148,130,0)] to-[rgb(47,47,3)] group-hover:shadow-[0px_0px_10px_rgba(255,215,0,0.8)] transition duration-300 ease-in-out mx-auto"></span>
                                     </div>
                                     <div className="flex flex-col">
                                         <span className="mb-1">Design & Prototyping</span>
@@ -340,13 +340,12 @@ const Features = () => {
                         </div>
                     </motion.div>
                     <div className="text-sm flex justify-start flex-col gap-2 mt-5">
-                        <h4>Powerful Task Management Tools</h4>
-                        <p className="text-neutral-500">Powerful Task MaEasily sort tasks by priority and status.
-                        Organize tasks.</p>
+                        <h4>Experience faster, smarter progress monitoring</h4>
+                        <p className="text-neutral-500">Stay effortlessly updated with real-time insights and faster performance monitoring.</p>
                     </div>
                 </div>
                 {/* This is the 3rd div */}
-                <div className="w-full lg:max-w-[832px] h-[514px] border border-neutral-900 rounded-2xl p-5 text-xs">
+                <div className="w-full lg:max-w-[832px] border border-neutral-900 rounded-2xl p-5 text-xs">
                     <div className="flex bg-[#0C0C0D] p-6 rounded-2xl text-text-color gap-8 flex-col justify-start w-full">
                         <div className="flex bg-[#141415] px-5 py-6 rounded-xl w-full justify-between">
                             <div className="flex gap-2">
@@ -389,36 +388,30 @@ const Features = () => {
                                     <div className="flex justify-between">
                                         <div className="flex gap-2">
                                             <Image 
-                                            src="/taskTrackingIcon1.svg"
-                                            width={20}
-                                            height={20}
-                                            alt="Image"
-                                            />
-                                            <Image 
-                                            src="/taskTrackingIcon1.svg"
+                                            src="/image1.svg"
                                             width={20}
                                             height={20}
                                             alt="Image"
                                             />
                                         </div>
-                                        <div className="flex">
+                                        <div className="flex gap-2">
                                             <Image 
-                                            src="/taskTrackingIcon1.svg"
-                                            width={20}
-                                            height={20}
+                                            src="/editIcon.svg"
+                                            width={16}
+                                            height={16}
                                             alt="Image"
                                             />
                                             <Image 
-                                            src="/taskTrackingIcon1.svg"
-                                            width={20}
-                                            height={20}
+                                            src="/chatIcon.svg"
+                                            width={16}
+                                            height={16}
                                             alt="Image"
                                             />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-1 bg-[#111112] shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-4 rounded-2xl">
-                                    <span className="text-white">Create client proposal</span>
+                                    <span className="text-white">Setup project repository</span>
                                     <span>Due by March 03, 2024</span>
                                 </div>
                             </div>
@@ -428,7 +421,7 @@ const Features = () => {
                                 <span className="mb-8">
                                     In progress
                                 </span>
-                                <div className="hover:border-[rgb(0,157,102)] duration-600 border-black rounded-xl border border-dashed flex w-full mb-5">
+                                <div className="hover:border-[rgb(0,157,102)] cursor-pointer duration-600 border-black rounded-xl border border-dashed flex w-full mb-5">
                                 <motion.div 
                                 whileHover={{
                                     x: -110,
@@ -444,36 +437,30 @@ const Features = () => {
                                 }}
                                 className="hover:border bg-[#111112] shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-4 rounded-2xl flex flex-col gap-5 border-[rgb(0,157,102)] w-full">
                                     <div className="flex flex-col">
-                                        <span className="text-white">Create client proposal</span>
-                                        <span className="mt-1">Due by March 03, 2024</span>
+                                        <span className="text-white">API for user authentication</span>
+                                        <span className="mt-1">Due by March 03, 2025</span>
                                     </div>
                                     <span className="w-full h-px bg-[#1E1E1E] flex"></span>
                                     <div className="flex justify-between">
                                         <div className="flex gap-2">
                                             <Image 
-                                            src="/taskTrackingIcon1.svg"
-                                            width={20}
-                                            height={20}
-                                            alt="Image"
-                                            />
-                                            <Image 
-                                            src="/taskTrackingIcon1.svg"
+                                            src="/image5.svg"
                                             width={20}
                                             height={20}
                                             alt="Image"
                                             />
                                         </div>
-                                        <div className="flex">
+                                        <div className="flex gap-2">
                                             <Image 
-                                            src="/taskTrackingIcon1.svg"
-                                            width={20}
-                                            height={20}
+                                            src="/editIcon.svg"
+                                            width={16}
+                                            height={16}
                                             alt="Image"
                                             />
                                             <Image 
-                                            src="/taskTrackingIcon1.svg"
-                                            width={20}
-                                            height={20}
+                                            src="/chatIcon.svg"
+                                            width={16}
+                                            height={16}
                                             alt="Image"
                                             />
                                         </div>
@@ -481,7 +468,7 @@ const Features = () => {
                                 </motion.div>
                                 </div>
                                 <div className="flex flex-col gap-1 bg-[#111112] shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-4 rounded-2xl">
-                                    <span className="text-white">Create client proposal</span>
+                                    <span className="text-white">Design homepage layout</span>
                                     <span>Due by March 03, 2024</span>
                                 </div>
                             </div>
@@ -492,68 +479,60 @@ const Features = () => {
                                 </span>
                                 <div className="bg-[#111112] shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-4 rounded-2xl flex flex-col gap-5 mb-5">
                                     <div className="flex flex-col">
-                                        <span className="text-white">Create client proposal</span>
-                                        <span className="mt-1">Due by March 03, 2024</span>
+                                        <span className="text-white">Integrate backend APIs</span>
+                                        <span className="mt-1">Due by April 03, 2025</span>
                                     </div>
                                     <span className="w-full h-px bg-[#1E1E1E] flex"></span>
                                     <div className="flex justify-between">
                                         <div className="flex gap-2">
                                             <Image 
-                                            src="/taskTrackingIcon1.svg"
-                                            width={20}
-                                            height={20}
-                                            alt="Image"
-                                            />
-                                            <Image 
-                                            src="/taskTrackingIcon1.svg"
+                                            src="/image6.svg"
                                             width={20}
                                             height={20}
                                             alt="Image"
                                             />
                                         </div>
-                                        <div className="flex">
+                                        <div className="flex gap-2">
                                             <Image 
-                                            src="/taskTrackingIcon1.svg"
-                                            width={20}
-                                            height={20}
+                                            src="/editIcon.svg"
+                                            width={16}
+                                            height={16}
                                             alt="Image"
                                             />
                                             <Image 
-                                            src="/taskTrackingIcon1.svg"
-                                            width={20}
-                                            height={20}
+                                            src="/chatIcon.svg"
+                                            width={16}
+                                            height={16}
                                             alt="Image"
                                             />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-1 bg-[#111112] shadow-[0px_-1px_0px_0px_rgba(35,37,40)] p-4 rounded-2xl">
-                                    <span className="text-white">Create client proposal</span>
-                                    <span>Due by March 03, 2024</span>
+                                    <span className="text-white">Design mobile responsiveness</span>
+                                    <span>Due by April 03, 2025</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="text-sm flex justify-start flex-col gap-2 mt-5">
-                        <h4>Powerful Task Management Tools</h4>
-                        <p className="text-neutral-500">Powerful Task MaEasily sort tasks by priority and status.
-                        Organize tasks.</p>
+                        <h4>Simple Task Tracking</h4>
+                        <p className="text-neutral-500">Track every task in your project with a clean, unified to-do view.</p>
                     </div>
                 </div>
                 {/* This is the 4th div */}
-                <div className="w-full lg:max-w-[364px] h-[514px] border border-neutral-900 p-5 rounded-2xl">
-                    <div className="relative hover:bg-gradient-to-t from-[#001307] to-transparent group flex bg-[#0C0C0D] p-6 rounded-2xl text-text-color gap-8 flex-col h-[24rem] justify-center">
+                <div className="w-full cursor-pointer lg:max-w-[364px]  border border-neutral-900 p-5 rounded-2xl">
+                    <div className="relative hover:bg-gradient-to-t from-[#001307] to-transparent group flex bg-[#0C0C0D] p-8 sm:p-20 lg:p-8 rounded-2xl text-text-color gap-8 flex-col h-[26rem] justify-center w-full">
                         <Button
-                        className="relative text-white"
+                        className="text-white w-full"
                         varient="primary">
                             Ask Stratify AI
                         </Button>
                         <span className="absolute opacity-0 group-hover:opacity-100 inset-x-0 bottom-px bg-gradient-to-r from-transparent via-green-800 to-transparent duration-400 h-[1.5px] w-3/4 mx-auto"></span>
-                        {/* <span className="absolute opacity-0 group-hover:opacity-20 transition-opacity duration-300 inset-x-0 top-px bg-gradient-to-b from-[rgb(0,157,107)]  to-transparent h-full w-full mx-auto blur-sm "></span> */}
                     </div>
                     <div className="text-sm flex justify-start flex-col gap-2 mt-5">
-                        <h4>Powerful Task Management Tools</h4>
-                        <p className="text-neutral-500">Powerful Task MaEasily sort tasks by priority</p>
+                        <h4>AI Teammate</h4>
+                        <p className="text-neutral-500">Stratify’s AI manages tasks and predicts timelines</p>
                     </div>
                 </div>
             </div>

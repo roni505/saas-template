@@ -11,8 +11,8 @@ export type ButtonProps = {
 }
 
 const btnStyles = {
-    primary: "bg-gradient-to-t from-[rgb(53,53,53)] to-[rgb(31,31,31)] px-5 py-3 rounded-[0.75rem] shadow-[0px_-2px_0px_0px_rgba(98,98,98)]",
-    secondary: "bg-[#1A1A1A] px-5 py-3 rounded-[0.75rem] hover:bg-neutral-700 duration-300 ease-in-out"
+    primary: "px-5 py-3 rounded-2xl shadow-[0px_-2px_0px_0px_rgba(98,98,98)] bg-gradient-to-b from-[rgb(40,40,40)] to-[rgb(20,20,20)] hover:from-[rgb(30,30,30)] hover:to-[rgb(15,15,15)] transition duration-300",
+    secondary: "bg-[#1A1A1A] px-5 py-3 rounded-2xl hover:bg-neutral-700 duration-300 ease-in-out"
 }
 
 const Button = ({
