@@ -2,7 +2,6 @@
 
 import Button from "./button";
 import Image from "next/image";
-import favicon from "../app/favicon.ico";
 import { motion } from "motion/react";
 import AnimatedText from "./animated-text";
 
@@ -37,7 +36,7 @@ const Hero = () => {
                 />
                 <AnimatedText 
                 text="Leverage AI and machine learning for effortless project management and collaboration."
-                className="max-w-[490px] text-base sm:text-xl text-center text-[#BEBEBE] mt-6"
+                className="max-w-[490px] text-base sm:text-xl text-center text-[#BEBEBE] mt-6 font-light"
                 />
                 <Button
                 varient="primary"

@@ -29,7 +29,7 @@ const TogglePrice = ({
                         )
                     }
                 </span>
-                <span className="text-base">Annually</span>
+                <span className="text-base">Monthly</span>
             </div>
             <div 
             className="cursor-pointer flex ml-7 items-center justify-center"
@@ -42,13 +42,13 @@ const TogglePrice = ({
                         )
                     }
                 </span>
-                <span className="mr-3 text-base">Monthly</span>
+                <span className="mr-3 text-base">Annually</span>
                 <span className="text-[#00FFA5] font-medium">{save}</span>
             </div>
         </div>
         {
-            annually ? <span className="text-sm text-neutral-400">Billed in one annual payment.</span>
-            : <span className="text-sm text-neutral-400">Billed monthly.</span>
+            annually ? <span className="text-sm text-neutral-400">Billed monthly</span>
+            : <span className="text-sm text-neutral-400">Billed in one annual payment.</span>
         }
         </>
     )

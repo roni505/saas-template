@@ -28,7 +28,7 @@ const Pricing = () => {
                     <div className="px-7 py-8 bg-gradient-to-b from-[rgb(18,18,18)] to-[rgb(10,10,10)] border-t-1 border-r-1 border-l-1 border-[#282828] rounded-2xl flex flex-col w-full lg:w-[350px]">
                         <span className="text-2xl font-bold">Free</span>
                         <span className="text-sm text-neutral-500 mt-3">Perfect for small teams and startups</span>
-                        <span className="text-3xl font-bold flex items-center gap-1 mb-8 mt-4">$0 <span className="text-sm font-semibold text-neutral-400">Forever</span> </span>
+                        <span className="text-5xl font-medium flex items-end gap-1 mb-8 mt-4">$0 <span className="text-sm font-semibold text-neutral-400">Forever</span> </span>
                         <Button
                         varient="secondary"
                         >
@@ -56,11 +56,11 @@ const Pricing = () => {
                     </div>
                     {/* 2nd pricing card */}
                     <div className="px-7 py-8 bg-gradient-to-b from-[rgb(13,13,13)] to-[rgb(0,28,18)] border-t-1 border-r-1 border-l-1 border-[#282828] rounded-2xl flex flex-col w-full lg:w-[350px]">
-                        <span className="text-2xl font-bold">Free</span>
-                        <span className="text-sm text-neutral-500 mt-3">Perfect for small teams and startups</span>
-                        <span className="text-3xl font-bold flex items-center gap-1 mb-8 mt-4">
+                        <span className="text-2xl font-bold">Pro</span>
+                        <span className="text-sm text-neutral-500 mt-3">Advanced tools for growing teams.</span>
+                        <span className="text-5xl font-medium flex items-end gap-1 mb-8 mt-4">
                             {
-                                toggle ? "$0" : "$50"
+                                toggle ? "$16" : "$24"
                             } 
                             <span className="text-sm font-semibold text-neutral-400">
                                 Forever
@@ -72,7 +72,7 @@ const Pricing = () => {
                             Start Free Trail
                         </Button>
                         <span className="w-full h-[1px] bg-gradient-to-r from-transparent via-[#434343] to-transparent mt-4"></span>
-                        <span className="text-base mt-8">Free Plan includes</span>
+                        <span className="text-base mt-8">All Free plan features, plus</span>
                         <div className="gap-2 flex flex-col mt-4">
                             <PlanIncludes 
                             text="Work with up to 3 teammates"
@@ -93,11 +93,11 @@ const Pricing = () => {
                     </div>
                     {/* 3rd pricing card */}
                     <div className="px-7 py-8 bg-gradient-to-b from-[rgb(18,18,18)] to-[rgb(10,10,10)] border-t-1 border-r-1 border-l-1 border-[#282828] rounded-2xl flex flex-col w-full lg:w-[350px]">
-                        <span className="text-2xl font-bold">Free</span>
-                        <span className="text-sm text-neutral-500 mt-3">Perfect for small teams and startups</span>
-                        <span className="text-3xl font-bold flex items-center gap-1 mb-8 mt-4">
+                        <span className="text-2xl font-bold">Team</span>
+                        <span className="text-sm text-neutral-500 mt-3">Complete collaboration for larger teams.</span>
+                        <span className="text-5xl font-medium flex items-end gap-1 mb-8 mt-4">
                             {
-                                toggle ? "$0" : "$50"
+                                toggle ? "$24" : "$32"
                             } 
                             <span className="text-sm font-semibold text-neutral-400">
                                 Forever
@@ -109,7 +109,7 @@ const Pricing = () => {
                             Start Free Trail
                         </Button>
                         <span className="w-full h-[1px] bg-gradient-to-r from-transparent via-[#434343] to-transparent mt-4"></span>
-                        <span className="text-base mt-8">Free Plan includes</span>
+                        <span className="text-base mt-8">All Pro plan features, plus</span>
                         <div className="gap-2 flex flex-col mt-4">
                             <PlanIncludes 
                             text="Work with up to 3 teammates"

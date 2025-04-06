@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import Logo from "./logo";
+import Link from "./link";
 
 const Footer = () => {
     return (
@@ -35,42 +35,63 @@ const Footer = () => {
                             Product
                         </span>
                         <div className="flex flex-col gap-4 text-sm text-[#767676]">
-                            <Link href="/">Features</Link>
-                            <Link href="/">Benefits</Link>
-                            <Link href="/">About</Link>
-                            <Link href="/">Customers</Link>
-                            <Link href="/">Pricing</Link>
+                            <Link
+                            to="Features"
+                            text="Features"
+                            /> 
+                            <Link
+                            to="Benefits"
+                            text="Benefits"
+                            />  
+                            <Link
+                            to="Customers"
+                            text="Customers"
+                            /> 
+                            <Link
+                            to="Pricing"
+                            text="Pricing"
+                            />
                         </div>
                     </div>
                     <div className="flex flex-col gap-5">
                         <span className="text-base">
-                            Product
+                            Company
                         </span>
                         <div className="flex flex-col gap-4 text-sm text-[#767676]">
-                            <Link href="/">Features</Link>
-                            <Link href="/">Benefits</Link>
-                            <Link href="/">About</Link>
-                            <Link href="/">Customers</Link>
-                            <Link href="/">Pricing</Link>
+                            <Link
+                            to="About"
+                            text="About"
+                            />
+                            <Link
+                            to="Blog"
+                            text="Blog"
+                            />
                         </div>
                     </div>
                     <div className="flex flex-col gap-5">
                         <span className="text-base">
-                            Product
+                            Resources
                         </span>
                         <div className="flex flex-col gap-4 text-sm text-[#767676]">
-                            <Link href="/">Features</Link>
-                            <Link href="/">Benefits</Link>
-                            <Link href="/">About</Link>
-                            <Link href="/">Customers</Link>
-                            <Link href="/">Pricing</Link>
+                            <Link
+                            to="Contact"
+                            text="Contact"
+                            />
+                            <Link
+                            to="Privacy Policy"
+                            text="Privacy Policy"
+                            />
+                            <Link
+                            to="Terms & conditions"
+                            text="Terms & conditions"
+                            />
                         </div>
                     </div>
                 </div>
             </div>
             <span className="flex h-[1px] bg-gradient-to-r from-transparent via-[#363636] to-transparent mx-auto w-full"></span>
             <div className="py-6 flex justify-center items-center">
-                <span>Built by Roni</span>
+                <span className="text-neutral-400">Built by Roni</span>
             </div>
         </footer>
     )
