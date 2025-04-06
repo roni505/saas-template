@@ -1,4 +1,4 @@
-![saas-template Screenshot]({E130A795-48C8-42BE-B869-1D7DC0EF9A2A}.png)
+![saas-template Screenshot](public/websiteSS.png)
 
 **Introduction**
 ---
