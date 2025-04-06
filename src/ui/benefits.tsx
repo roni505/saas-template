@@ -3,7 +3,9 @@ import Image from "next/image";
 
 const Benefits = () => {
     return (
-        <div className="flex flex-col items-center justify-center w-full mx-auto max-w-7xl">
+        <div 
+        id="Benefits"
+        className="flex flex-col items-center justify-center w-full mx-auto max-w-7xl">
             <SectionHeader 
             chip="Benefits"
             title="Why Businesses Choose Stratify"

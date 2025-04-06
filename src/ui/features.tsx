@@ -50,7 +50,9 @@ const chipInput: ChipProp[] = [
 const Features = () => {
     const constraintsRef = useRef(null)
     return (
-        <div className="flex flex-col justify-center items-center max-w-7xl mx-auto w-full">
+        <div 
+        id="Features"
+        className="flex flex-col justify-center items-center max-w-7xl mx-auto w-full">
             <SectionHeader 
             chip="Features"
             title="Advanced Features for Peak Efficienty"

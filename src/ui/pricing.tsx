@@ -9,7 +9,9 @@ import TogglePrice from "./toggle-button";
 const Pricing = () => {
     const [toggle, setToggle] = useState(false);
     return (
-        <div className="flex flex-col justify-center items-center mx-auto w-full">
+        <div 
+        id="Pricing"
+        className="flex flex-col justify-center items-center mx-auto w-full">
             <SectionHeader 
             chip="Pricing"
             title="Choose the Perfect Plan for Your Business"

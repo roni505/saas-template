@@ -11,16 +11,16 @@ const Nav = () => {
 
     return (
         <header className="relative w-full z-20">
-            <nav className="fixed right-0 left-0 top-0 py-4 px-5 lg:px-0 flex max-w-7xl justify-between mx-auto items-cente bg-black/30 backdrop-blur-lg">
+            <nav className="fixed right-0 left-0 top-0 py-4 px-5 lg:px-0 flex max-w-7xl justify-between mx-auto items-cente bg-black/30 backdrop-blur-lg ">
                 <Logo />
                 <div 
-                className="hidden sm:flex gap-6 lg:gap-10 justify-center items-center text-text-color"
+                className="hidden md:flex gap-6 lg:gap-10 justify-center items-center text-text-color"
                 >
                     <Link
                     to="Features"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer"
+                    className="cursor-pointer hover:text-white duration-300"
                     >
                     Features
                     </Link>
@@ -28,23 +28,15 @@ const Nav = () => {
                     to="Benefits"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer"
+                    className="cursor-pointer hover:text-white duration-300"
                     >
                     Benefits
-                    </Link>
-                    <Link
-                    to="About"
-                    smooth={true}
-                    duration={500}
-                    className="cursor-pointer"
-                    >
-                    About
                     </Link>
                     <Link
                     to="Customers"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer"
+                    className="cursor-pointer hover:text-white duration-300"
                     >
                     Customers
                     </Link>
@@ -52,21 +44,21 @@ const Nav = () => {
                     to="Pricing"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer"
+                    className="cursor-pointer hover:text-white duration-300"
                     >
                     Pricing
                     </Link>
                     <Link
-                    to="Features"
+                    to=""
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer"
+                    className="cursor-pointer hover:text-white duration-300"
                     >
-                    Features
+                    About
                     </Link>
                 </div>
                 <button
-                className="sm:hidden cursor-pointer"
+                className="md:hidden cursor-pointer hover:text-white duration-300"
                 onClick={() => setIsOpen(!isOpen)}
                 >
                     {
@@ -76,12 +68,12 @@ const Nav = () => {
                 {
                     isOpen && (
                         <div 
-                        className="absolute w-full left-0 top-10 gap-7 p-5 bg-black min-h-screen flex flex-col text-text-color">
+                        className="absolute w-full left-0 top-18 gap-7 p-5 bg-black min-h-screen flex flex-col text-text-color">
                             <Link
                             to="Features"
                             smooth={true}
                             duration={500}
-                            className="cursor-pointer"
+                            className="cursor-pointer hover:text-white duration-300"
                             >
                             Features
                             </Link>
@@ -89,23 +81,15 @@ const Nav = () => {
                             to="Benefits"
                             smooth={true}
                             duration={500}
-                            className="cursor-pointer"
+                            className="cursor-pointer hover:text-white duration-300"
                             >
                             Benefits
-                            </Link>
-                            <Link
-                            to="About"
-                            smooth={true}
-                            duration={500}
-                            className="cursor-pointer"
-                            >
-                            About
                             </Link>
                             <Link
                             to="Customers"
                             smooth={true}
                             duration={500}
-                            className="cursor-pointer"
+                            className="cursor-pointer hover:text-white duration-300"
                             >
                             Customers
                             </Link>
@@ -113,9 +97,17 @@ const Nav = () => {
                             to="Pricing"
                             smooth={true}
                             duration={500}
-                            className="cursor-pointer"
+                            className="cursor-pointer hover:text-white duration-300"
                             >
                             Pricing
+                            </Link>
+                            <Link
+                            to=""
+                            smooth={true}
+                            duration={500}
+                            className="cursor-pointer hover:text-white duration-300"
+                            >
+                            About
                             </Link>
                             <Button
                             varient="secondary"
@@ -128,11 +120,11 @@ const Nav = () => {
                 }
                 <Button
                 varient="secondary"
-                className="hidden sm:block"
+                className="hidden md:block"
                 >
                     Contact us
                 </Button>
-                <span className="absolute inset-x-0 top-20 bg-gradient-to-r from-transparent via-neutral-800 to-transparent h-px w-3/4 mx-auto"></span>
+                <span className="absolute bottom-0 left-0 bg-gradient-to-r from-transparent via-neutral-800 to-transparent h-px w-full"></span>
             </nav>
         </header>
     )

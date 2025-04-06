@@ -44,7 +44,9 @@ const reviewCardInputs: ReviewCardProps[] = [
 
 const Customers = () => {
     return (
-        <div className="flex justify-center items-center mx-auto max-w-7xl flex-col">
+        <div 
+        id="Customers"
+        className="flex justify-center items-center mx-auto max-w-7xl flex-col">
             <SectionHeader 
             chip="Customers"
             title="What Our Customers Are Saying"

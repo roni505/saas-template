@@ -24,7 +24,7 @@ const AnimatedText = ({
     const ref = useRef(null);
     const isInview = useInView(ref, { amount: 0.5, once: true });
     return (
-        <div className="flex">
+        <div className="flex mx-5">
             {/* for screen reader only */}
             <span className="sr-only">{text}</span>
             <motion.span 

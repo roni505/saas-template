@@ -47,14 +47,15 @@ const Hero = () => {
                     Try Stratify for Free
                 </Button>
             </div>
-            <div className="mt-16 border border-neutral-900 p-6 rounded-2xl">
-                    <Image
-                    src="/ok.svg"
-                    width={1080}
-                    height={800}
-                    alt="Dashboard"
-                    />
-                </div>
+            <div className="relative mt-16 border border-neutral-900 p-6 mx-5 rounded-2xl ">
+                <span className="absolute top-0 left-0 bg-gradient-to-r from-transparent via-green-800 to-transparent h-px w-full"></span>
+                <Image
+                src="/heroDashboard.svg"
+                width={1080}
+                height={800}
+                alt="Dashboard"
+                />
+            </div>
         </section>
     )
 }
