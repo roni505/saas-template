@@ -26,7 +26,7 @@ const Button = ({
         <motion.button 
         initial={animate ? { opacity: 0} : undefined}
         animate={animate ? { opacity: 1, transition:{
-            delay: 0.6,
+            delay: 0.8,
             ease: "easeInOut"
         }} : undefined}
 
